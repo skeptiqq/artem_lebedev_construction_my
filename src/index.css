@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@source "../src";
+
+@theme {
+  --font-sans: "Manrope", "Inter", "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Manrope", "Inter", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: Georgia, "Times New Roman", ui-serif, serif;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  button, input, textarea, select {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Масштабирование всего под высоту мобильного экрана.
+   SE (667px) → ~15px, iPhone 14 (844px) → ~17.7px, 14 Pro Max (932px) → ~19.6px.
+   Все Tailwind rem-единицы (отступы, шрифты, высоты) масштабируются автоматически. */
+@media (max-width: 639px) {
+  html {
+    font-size: clamp(15px, 2.1svh, 20px);
+  }
+}
+
+/* Scroll-snap only on desktop — workflow section snaps to start */
+@media (min-width: 640px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+}
+
+/* Hide scrollbar but keep scrollability */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,3 @@
+- [Vite image paths break in prod](vite-image-paths.md) — hardcoded `/src/assets/...` image src strings 404 after build; must use ES `import` or `public/` folder.
+- [Major landing rebuild 2026-07](landing-rebuild-2026-07.md) — full site redesign: portfolio Комфорт/Премиум, 14-stage workflow, guarantees, design project, image reviews, 26 FAQs, enhanced About.
+- [Mobile design system 2026-08](mobile-design-system.md) — enforced constants: h2 clamp(20px,2.8svh,26px), bronze #8B5E3C, АЛ monogram SVG pattern, Contacts section calc(100svh-3.5rem).

@@ -1,0 +1,40 @@
+Media and content project statistics
+Yandex Metrica provides a set of tools for meeting the challenges of media and content projects. Using special reports, you can find out things like which topics and content are most popular, how people read and interact with this content, and which sources generate most traffic. These tools allow you to:
+
+Track the traffic in real time.
+Analyse content effectiveness.
+Study the behavior of the audience of each of the materials or categories.
+Make decisions about developing content projects;
+Evaluate content profitability.
+How to get statistics on content
+Yandex Metrica collects statistics using micro markup: Schema.org and Open Graph. It’s usually intended for structuring data posted on a site. Marked-up data is used by various services, including search engines — for example, to generate snippets.
+
+You can use plugins to embed micro markup on your site. They are often developed for search engines. Therefore, they may not be fully suitable for the markup format that Yandex Metrica uses. The difference is that a plugin developed for search engines handles all content of a site’s pages, and for Yandex Metrica, you only need to mark up certain attributes (article text, author, topic, category, and so on). As a result, data is either not transmitted to Yandex Metrica and reports are not generated, or redundant data is transmitted (instead of the article text, the entire page text is transmitted) and reports are generated incorrectly.
+
+Alert
+
+If you embed micro markup using a plugin, you’ll probably need to modify it. To do this, contact the plugin developer or another professional with development skills.
+
+To receive statistics:
+
+Enable the Content analytics option in the tag settings. Specify what type of markup data you are going to use or already using: Schema.org (Microdata or JSON-LD), Open Graph. If you already use both markup versions on your site, select your preferred version.
+
+Install the Yandex Metrica tag on all the pages of your site, or make sure the tag was installed correctly.
+
+Note
+
+Statistics are collected and displayed in reports only if new tag code is installed on the website.
+
+Mark up pages with the content you want to analyze. Read more about markup:
+
+Schema.org
+Open Graph.
+
+
+
+Yandex Metrica will only begin collecting data when a user views a marked-up article longer than 500 characters, or any other page marked up as Questions and answers.
+
+Statistics on Turbo site's marked-up content and pages will soon be collected. Reports will appear in the Content section in a few hours.
+
+How to make sure that marked-up data is passed to Yandex Metrica
+
